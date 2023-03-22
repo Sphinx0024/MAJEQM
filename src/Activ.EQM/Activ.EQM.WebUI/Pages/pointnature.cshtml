@@ -1,0 +1,202 @@
+﻿@page
+@model Activ.EQM.WebUI.Pages.affichagepointnatureModel
+@{
+    ViewData["Title"] = "Point Nature page";
+}
+
+
+<script type="text/javascript" src="~/js/Script.js"></script>
+<!--<script type="text/javascript">
+
+        window.onload = function(){
+            afficher();
+        }
+        
+        function affiher(){
+        //let place = document.querySelector("#corps");
+            let infos = '';
+        //let donnees = getdata("http://localhost:5000/ActionPointNature");
+
+            fetch('http://localhost:5000/ActionPointNature')
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    for (let item of data) {
+                        infos += `<tr><td>${item.title}</td><td>${item.createBy}</td></tr>`;
+                    }
+                    document.getElementById('corps').innerHTML = infos;
+                    //place.innerHTML = infos;
+                });
+        }
+
+        
+        
+        /*let place = document.querySelector("#corps");
+        let infos = '';
+        //let donnees = getdata("http://localhost:5000/ActionPointNature");
+
+        if (document.readyState === 'complete') {
+            fetch('http://localhost:5000/ActionPointNature')
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    for (let item of data) {
+                        infos += `<tr><td>${item.title}</td><td>${item.createBy}</td></tr>`;
+                    }
+                    place.innerHTML = infos;
+                });
+        }
+        else {
+            document.addEventListener('DOMContentLoaded', function () {
+                fetch('http://localhost:5000/ActionPointNature')
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        for (let item of data) {
+                            infos += `<tr><td>${item.title}</td><td>${item.createBy}</td></tr>`;
+                        }
+                        place.innerHTML = infos;
+                    });
+            });
+        }
+
+        /*if (document.readyState === 'complete') {
+
+           donnees.then(reponse => reponse)
+            .then(data => {
+                console.log(data);
+                for (let item of data) {
+                    infos += `<tr><td>${item.title}</td><td>${item.createBy}</td></tr>`;
+                }
+                place.innerHTML = infos;
+               });
+        }
+        else {
+                document.addEventListener('DOMContentLoaded', function () {});
+            donnees.then(reponse => reponse)
+            .then(data => {
+                console.log(data);
+                for (let item of data) {
+                    infos += `<tr><td>${item.title}</td><td>${item.createBy}</td></tr>`;
+                }
+                place.innerHTML = infos;
+                });
+             }                  
+                          
+                          //console.log(data);
+
+        //console.log(donnees.length);
+        //console.log(data);
+
+        /*let place = document.querySelector("#affichage");
+        let infos = '
+                        < tr >
+                            <td>TEST</td>
+                            <td> ESSAYAGE </td>
+                        </tr>'
+                    ;*/
+        
+
+        //let data = donnees.then(successCallback, failureCallback);
+
+        //console.log(data);
+
+        //donnees.then( (val) => console.log("journalisation asynchrone / val vaut :",val) );
+
+        /*data.foreach((title,createBy)=>
+            infos +='
+                  
+                    <tr>
+                        <td>${title}</td>
+                        <td>${createBy}</td>
+                    </tr>';
+        );*/
+         /*for (let valeur in data) {
+              
+             infos +='
+                  
+                    <tr>
+                        <td>${valeur[i].title}</td>
+                        <td>${valeur[i].createBy}</td>
+                    </tr>
+            
+            ';
+         }*/
+        
+        /*for(let i=0;  i<donnees.length; i++){
+            
+            infos +='
+                  
+                    <tr>
+                        <td>${data[i].title}</td>
+                        <td>${data[i].createBy}</td>
+                    </tr>
+            
+            ';
+        }*/
+
+        //place.innerHTML = infos;
+
+    </script>-->
+
+    <div class="container-fluid py-4 text-center">
+        <div class="row">
+            <div class="col-12">
+                <div class="card my-4">
+                      <div class="card-header p-0 position-relative mt-n2 mx-0 z-index-1">
+                      <div class="ms-md-1 pe-md-1 d-flex align-items-left">
+               
+                      </div>
+                      <div class="bg-gradient-primary shadow-primary border-radius-lg pt-2 pb-2">
+                            <table class="table align-items-center mb-0" cellspacing="15">
+                                <tr>
+                                    <td><h6 class="text-white text-capitalize ps-3">Point Nature</h6> </td>
+                                    <td class="col-lg-2">
+                                        <a class="btn bg-gradient-primary mt-4 w-21" href="ajoutpointnature.html" type="button">Ajouter</a>
+                                    </td>
+                                    <!--<td class="col-lg-1">
+                                        <a class="btn bg-gradient-primary mt-4 w-21" href="modificationpointnature.html" type="button">Modifier</a>
+                                    </td>
+                                    <td class="col-lg-2">
+                                        <a class="btn bg-gradient-primary mt-4 w-21" href="suppressionpointnature.html" type="button">Supprimer</a>
+                                </td>-->
+                                </tr>
+                            </table>
+                      </div>
+                </div>
+
+                <div class="card-body px-0 pb-2">
+                      <div class="table-responsive p-0">
+                            <table class="table align-items-center mb-5">
+                                <thead>
+                                    <tr>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" name="">Titre</th>
+                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date de Creation</th>
+                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                    
+                                    </tr>
+                                </thead>
+                                <tbody id="corps">
+                                    <script type="text/javascript">
+                                        let infos = '';
+                                        let lien = 'http://localhost:5000/ActionPointNature';
+                                        fetch('http://localhost:5000/ActionPointNature')
+                                            .then(res => res.json())
+                                            .then(data => {
+                                                console.log(data);
+                                                for (let item of data) {
+                                                infos += `<tr><td>${item.title}</td><td>${item.created}</td><td><button Onclick="detail(${item.natureId},'pointnature')" class="btn btn-light">Détail</button>&nbsp;<button class="btn btn-warning" Onclick="modifier(${item.natureId},'pointnature')">Modifier</button>&nbsp;<button class="btn btn-danger" Onclick="supprimer('http://localhost:5000/ActionPointNature',${item.natureId},'pointnature')">Supprimer</button></td></tr>`;
+                                                }
+                                                document.getElementById('corps').innerHTML = infos;
+                                                //place.innerHTML = infos;
+                                            });
+                                    </script>
+                                </tbody>
+                            </table>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+

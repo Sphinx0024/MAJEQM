@@ -1,0 +1,55 @@
+﻿@page
+@model Activ.EQM.WebUI.Pages.actionpointModel
+@{
+    ViewData["Title"] = "Action Point page";
+}
+
+<div class="container-fluid py-4 text-center">
+    <div class="row">
+        <div class="col-12">
+            <div class="card my-4">
+                <div class="card-header p-0 position-relative mt-n2 mx-0 z-index-1">
+                    <div class="ms-md-1 pe-md-1 d-flex align-items-left">
+                    </div>
+                    <div class="bg-gradient-primary shadow-primary border-radius-lg pt-2 pb-2">
+                        <table class="table align-items-center mb-0" cellspacing="15">
+                            <td><h6 class="text-white text-capitalize ps-3">Action Point</h6> </td>
+                            <td class="col-lg-1">
+                                <a class="btn bg-gradient-primary mt-4 w-21" href="ajoutpointnature.html" type="button">Ajouter</a>
+                            </td>
+                            <td class="col-lg-1">
+                                <a class="btn bg-gradient-primary mt-4 w-21" href="modificationpointnature.html" type="button">Modifier</a>
+                            </td>
+                            <td class="col-lg-2">
+                                <a class="btn bg-gradient-primary mt-4 w-21" href="suppressionpointnature.html" type="button">Supprimer</a>
+                            </td>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-body px-0 pb-2">
+                    <div class="table-responsive p-0">
+                        <table class="table align-items-center mb-5">
+                            <thead>
+                                <tr>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" name="">Titre</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Description</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Creer par</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Audit</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nature</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Processus tiers</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Niveau du point d'action</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Priorité des points d'action</th>
+                                    <th class="text-secondary opacity-7"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

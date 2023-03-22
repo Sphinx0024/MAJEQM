@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\audit.cshtml" />
+    <Content Remove="Pages\Process.cshtml" />
+    <Content Remove="wwwroot\css\material-dashboard.css" />
+    <Content Remove="wwwroot\css\material-dashboard.min.css" />
+    <Content Remove="wwwroot\css\nucleo-icons.css" />
+    <Content Remove="wwwroot\css\nucleo-svg.css" />
+    <Content Remove="wwwroot\font\nucleo-icons.eot" />
+    <Content Remove="wwwroot\font\nucleo-icons.svg" />
+    <Content Remove="wwwroot\font\nucleo-icons.ttf" />
+    <Content Remove="wwwroot\font\nucleo-icons.woff" />
+    <Content Remove="wwwroot\font\nucleo-icons.woff2" />
+    <Content Remove="wwwroot\font\nucleo.eot" />
+    <Content Remove="wwwroot\font\nucleo.ttf" />
+    <Content Remove="wwwroot\font\nucleo.woff" />
+    <Content Remove="wwwroot\font\nucleo.woff2" />
+    <Content Remove="wwwroot\js\core\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\js\core\bootstrap.min.js" />
+    <Content Remove="wwwroot\js\core\popper.min.js" />
+    <Content Remove="wwwroot\js\material-dashboard.js" />
+    <Content Remove="wwwroot\js\material-dashboard.min.js" />
+    <Content Remove="wwwroot\js\plugins\bootstrap-notify.js" />
+    <Content Remove="wwwroot\js\plugins\Chart.extension.js" />
+    <Content Remove="wwwroot\js\plugins\chartjs.min.js" />
+    <Content Remove="wwwroot\js\plugins\perfect-scrollbar.min.js" />
+    <Content Remove="wwwroot\js\plugins\smooth-scrollbar.min.js" />
+    <Content Remove="wwwroot\js\plugins\world.js" />
+    <Content Remove="wwwroot\js\Script.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Process.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\audit.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Process.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\audit.cshtml" />
+    <None Include="Pages\Process.cshtml" />
+    <None Include="wwwroot\css\material-dashboard.css" />
+    <None Include="wwwroot\css\material-dashboard.min.css" />
+    <None Include="wwwroot\css\nucleo-icons.css" />
+    <None Include="wwwroot\css\nucleo-svg.css" />
+    <None Include="wwwroot\font\nucleo-icons.eot" />
+    <None Include="wwwroot\font\nucleo-icons.svg" />
+    <None Include="wwwroot\font\nucleo-icons.ttf" />
+    <None Include="wwwroot\font\nucleo-icons.woff" />
+    <None Include="wwwroot\font\nucleo-icons.woff2" />
+    <None Include="wwwroot\font\nucleo.eot" />
+    <None Include="wwwroot\font\nucleo.ttf" />
+    <None Include="wwwroot\font\nucleo.woff" />
+    <None Include="wwwroot\font\nucleo.woff2" />
+    <None Include="wwwroot\js\core\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\js\core\bootstrap.min.js" />
+    <None Include="wwwroot\js\core\popper.min.js" />
+    <None Include="wwwroot\js\material-dashboard.js" />
+    <None Include="wwwroot\js\material-dashboard.min.js" />
+    <None Include="wwwroot\js\plugins\bootstrap-notify.js" />
+    <None Include="wwwroot\js\plugins\Chart.extension.js" />
+    <None Include="wwwroot\js\plugins\chartjs.min.js" />
+    <None Include="wwwroot\js\plugins\perfect-scrollbar.min.js" />
+    <None Include="wwwroot\js\plugins\smooth-scrollbar.min.js" />
+    <None Include="wwwroot\js\plugins\world.js" />
+    <None Include="wwwroot\js\Script.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\audit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RazorJS" Version="0.4.3" />
+  </ItemGroup>
+
+</Project>

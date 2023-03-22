@@ -1,0 +1,93 @@
+﻿@page
+@model IndexModel 
+@{
+    ViewData["Title"] = "Home page";
+    
+}
+
+
+<div class="text-center">
+<!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+              <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:"></a></li>
+              <li class="" aria-current="page"></li>
+          </ol>
+          <h6 class="font-weight-bolder mb-0">Tableau de bord</h6>
+        </nav>
+          <ul class="navbar-nav  justify-content-end">
+              <li class="nav-item d-flex align-items-center">
+              <a class="" target="_blank" href="https://www.creative-tim.com/builder/material?ref=navbar-dashboard"></a>
+              </li>
+              <a href="../pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
+                  <i class="fa fa-user me-sm-1"></i>
+                  <span class="d-sm-inline d-none">Connexion</span>
+              </a>
+           </ul>
+      </div>
+    </nav>
+ 
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6 mt-4 mb-4">
+          <div class="card z-index-2 ">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+              <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
+                <div class="chart">
+                  <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+            <a href="../pages/creationprocessus.html"> <h6 class="mb-0 ">Creation du processus</h6> </a>
+              <p class="text-sm "></p>
+              <hr class="dark horizontal">
+              <div class="d-flex ">
+                <i class=></i>
+                <p class="mb-0 text-sm"> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mt-2 mb-5">
+          <div class="card z-index-2  ">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+              <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
+                <div class="chart">
+                  <canvas id="chart-line" class="chart-canvas" height="170"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="../pages/suiviaudit.html"> <h6 class="mb-0"> Suivi de l'audit</h6></a>
+              <hr class="dark horizontal">
+              <div class="d-flex ">
+                <i class=></i>
+                <p class=></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-4 mb-0">
+          <div class="card z-index-2 ">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+              <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
+                <div class="chart">
+                  <canvas id="chart-line-tasks" class="chart-canvas" height="170"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a href="../pages/rapportaudit.html"> <h6 class="mb-0">Rapport de l'audit</h6></a>
+              <hr class="dark horizontal">
+              <div class="d-flex ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ </div>
+
+

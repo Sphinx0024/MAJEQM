@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Activ.EQM.WebUI
+build_property.RootNamespace = Activ.EQM.WebUI
+build_property.ProjectDir = D:\source\repos\EQM1\EQM\src\Activ.EQM\Activ.EQM.WebUI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\source\repos\EQM1\EQM\src\Activ.EQM\Activ.EQM.WebUI
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/actionpoint.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWN0aW9ucG9pbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/ajoutprocessus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWpvdXRwcm9jZXNzdXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/audit1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYXVkaXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/detailprocessus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV0YWlscHJvY2Vzc3VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/editprocessus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZWRpdHByb2Nlc3N1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/pointnature.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccG9pbnRuYXR1cmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/processus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvY2Vzc3VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/source/repos/EQM1/EQM/src/Activ.EQM/Activ.EQM.WebUI/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-30zggqbug7

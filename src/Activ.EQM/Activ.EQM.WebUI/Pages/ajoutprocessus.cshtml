@@ -1,0 +1,116 @@
+﻿@page
+@model Activ.EQM.WebUI.Pages.ajoutprocessusModel
+@{
+    ViewData["Title"] = "Ajout Processus page";
+}
+
+@section scripts {
+    <!--<script type="text/javascript" src="~/js/Script.js"></script>-->
+    <script type="text/javascript">
+
+        function ajouter() {
+
+            //var form = document.querySelector('form');
+            //var data = new FormData(form);
+            var t = document.getElementById("titre").value;
+            var d = document.getElementById("description").value;
+            var turn = document.getElementById("delai").value;
+            var p = document.getElementById("participant").value;
+            var m = document.getElementById("manager").value;
+            var third = document.getElementById("processus").value;
+            var create = document.getElementById("created").value;
+
+            var data = {
+                Title : t,
+                Description : d,
+                TurnaroundTimes : turn,
+                Participants : p,
+                Manager: m,
+                ThirdPartyProcesses: third,
+                CreateBy: create
+            }
+
+            console.log(data);
+
+            fetch('http://localhost:5000/Process', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            alert("Enregistrement reussi !");
+            location.replace('https://localhost:7135/processus');
+
+        }
+        
+    </script>
+}
+
+<div class="page-header min-vh-100">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-0 col-lg-0 col-md-10 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
+                <div class="card card-plain">
+                    <div class="form-control">
+
+                        <div class="card-body">
+                            <form id="form" method="post">
+                                <div class="input-group input-group-outline mb-3">
+                                    <label class="form-label">Titre</label>
+                                    <input type="text" id="titre" class="form-control">
+                                </div>
+                                <div class="form-label">
+                                    <label class="form-label">Description</label>
+                                </div>
+                                <div class="form-label">
+                                    <textarea class="form-label" id="description" rows="4" cols="112"></textarea>
+                                </div>
+                                <div class="input-group input-group-outline mb-3">
+                                    <label class="form-label">Delais d'execution</label>
+                                    <input type="text" id="delai" class="form-control">
+                                </div>
+                                <div class="form-label">
+                                    <label class="form-label">Participants</label>
+                                </div>
+                                <div class="form-label">
+                                    <textarea class="form-label" id="participant" rows="4" cols="112"></textarea>
+                                </div>
+                                <div class="input-group input-group-outline mb-3">
+                                    <label class="form-label">Processus tiers</label>
+                                    <input type="text" id="processus" class="form-control">
+                                </div>
+                                <div class="input-group input-group-outline mb-3">
+                                    <label class="form-label">Manager</label>
+                                    <input type="text" id="manager" class="form-control">
+                                </div>
+                                <div class="input-group input-group-outline mb-3">
+                                    <label class="form-label">Creer par</label>
+                                    <input type="text" id="created" class="form-control">
+                                </div>
+                                <!--   <div class="form-check form-check-info text-start ps-0">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    J'accepte <a href="javascript:;" class="text-dark font-weight-bolder">toutes les conditions</a>
+                                  </label>
+                                </div>-->
+                                <div class="text-center">
+                                    <a href="../pages/ajoutprocessus.html" class="text-dark font-weight-bolder"></a>
+                                    <button type="button" onclick="ajouter();" class="btn btn-lg bg-gradient-primary btn-lg w-60 mt-4 mb-0">Enregistrer</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <!--   <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                           <p class="mb-2 text-sm mx-auto">
+                             Un compte existant?
+                             <a href="../pages/dashboard.html" class="text-primary text-gradient font-weight-bold">Se connecter</a>
+                           </p>
+                         </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

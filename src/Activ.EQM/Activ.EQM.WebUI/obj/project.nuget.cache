@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "y9iuHn/gMZeCGCCRAH0SKZUazjaoWqVhz5aIQldZkE2nts1Gj1GVRCU3moD6+vcUsqgni4Dd2wLEDtNYKLJpVQ==",
+  "success": true,
+  "projectFilePath": "D:\\source\\repos\\EQM1\\EQM\\src\\Activ.EQM\\Activ.EQM.WebUI\\Activ.EQM.WebUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\activ\\.nuget\\packages\\razorjs\\0.4.3\\razorjs.0.4.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Le package 'RazorJS 0.4.3' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net6.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "libraryId": "RazorJS",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

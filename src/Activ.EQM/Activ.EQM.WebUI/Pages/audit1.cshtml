@@ -1,0 +1,115 @@
+﻿@page
+@model Activ.EQM.WebUI.Pages.auditModel
+@{
+    ViewData["Title"] = "Audit page";
+}
+
+
+
+
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card my-4">
+                <div class="card-header p-0 position-relative mt-n2 mx-0 z-index-1">
+                    <div class="ms-md-1 pe-md-1 d-flex align-items-left">
+                    </div>
+                    <div class="bg-gradient-primary shadow-primary border-radius-lg pt-2 pb-2">
+                        <table class="table align-items-center mb-0" cellspacing="15">
+                            <tr>
+                                <td>
+                                    <h6 class="text-white text-capitalize ps-3">Audit</h6>
+                                </td>
+                                <td class="col-lg-1">
+                                    <a class="btn bg-gradient-primary mt-4 w-21" href="ajoutaudit.html" type="button">Ajouter</a>
+                                </td>
+                                <td class="col-lg-1">
+                                    <a class="btn bg-gradient-primary mt-4 w-21" href="modificationaudit.html" type="button">Modifier</a>
+                                </td>
+                                <td class="col-lg-2">
+                                    <a class="btn bg-gradient-primary mt-4 w-21" href="suppressionaudit.html" type="button">Supprimer</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="table-responsive p-0">
+                <table class="table align-items-center mb-5">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" name="">Titre</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Description</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">reference</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Processus</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date de creation</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody id="corps">
+                            <script type="text/javascript">
+                                let infos = '';
+                                let titre = '';
+                                let processus = '';
+
+                                function process(_url, id){
+                                    fetch(_url)
+                                    .then(res => res.json())
+                                    .then(data => {
+                                        console.log(data);
+                                        for(let item1 of data){
+                                            processus += item1.title;
+                                        }
+                                    })
+                                }
+
+                                fetch('http://localhost:5000/Audit')
+                                    .then(res => res.json())
+                                    .then(data => {
+                                        console.log(data);
+                                        for (let item of data) {
+                                            //let result = afficherTitreProcessus(item.processId);
+                                            //console.log(result);
+                                            
+                                            //process('http://localhost:5000/Process/', item.processId)
+
+                                            //infos += `<tr><td>${result}</td></tr>`;
+                                            /*fetch('http://localhost:5000/Process/' + item.auditId)
+                                                .then(res => res.json())
+                                                .then(data => {
+                                                    console.log(data);
+                                                    //titre += data.title;
+                                                    //return titre;
+                                                    for (let item1 of data) {
+                                                        infos += `<tr><td>${item.title}</td><td>${item.description}</td><td>${item.reference}</td><td>${item1.title}</td><td>${result}</td><td>${item.created}</td><td><button attr.data-value=${item.auditId} class="btn btn-light">Détail</button>&nbsp;<button class="btn btn-warning" attr.data-value=${item.auditId}>Modifier</button>&nbsp;<button class="btn btn-danger" attr.data-value=${item.auditId}>Supprimer</button></td></tr>`;
+                                                        //processus += item1.title;
+                                                    }
+                                                });*/
+
+                                            //infos += `<tr><td>${item.title}</td><td>${item.description}</td><td>${item.reference}</td><td>${item.EqmProcess.title}</td><td>${result}</td><td>${item.created}</td><td><button attr.data-value=${item.auditId} class="btn btn-light">Détail</button>&nbsp;<button class="btn btn-warning" attr.data-value=${item.auditId}>Modifier</button>&nbsp;<button class="btn btn-danger" attr.data-value=${item.auditId}>Supprimer</button></td></tr>`;
+                                        }
+                                        document.getElementById('corps').innerHTML = infos;
+                                        place.innerHTML = infos;
+                                    });
+
+                                /*function afficherTitreProcessus(id) {
+
+                                    fetch('http://localhost:5000/Process/'+id)
+                                        .then(res => res.json())
+                                        .then(data => {
+                                            console.log(data);
+                                            titre += data.title;
+                                            //return titre;
+                                        });
+                                        console.log(titre);
+                                }*/
+
+                            </script>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
